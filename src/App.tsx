@@ -1,6 +1,7 @@
 import React from 'react';
 import CardProject from './components/CardProject';
 import styled from 'styled-components';
+import HomeScreen from './screen/home';
 const URL = "https://images.unsplash.com/photo-1542396601-dca920ea2807?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=948&q=80";
 
 const Container = styled.div`
@@ -34,26 +35,7 @@ const ImageBackground = styled.img`
 
 function App() {
   return (
-    <>
-      <Header></Header>
-      <HeaderBackground>
-        <ImageBackground src={URL}/>
-      </HeaderBackground>
-      <Container>
-        <CardProject
-          title="Architecture"
-          url="https://i.pinimg.com/originals/87/9f/ba/879fba21d66993bf0efb278e6767b658.jpg"
-        />
-        <CardProject
-          title="Architecture"
-          url="https://images.wallpaperscraft.com/image/lines_texture_surface_195929_1280x1024.jpg"
-        />
-        <CardProject
-          title="Architecture"
-          url="https://images.wallpaperscraft.com/image/fireplace_fire_flame_195935_1280x1024.jpg"
-        />
-      </Container>
-    </>
+    <HomeScreen/>
   );
 }
 

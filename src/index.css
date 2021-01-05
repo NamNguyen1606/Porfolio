@@ -4,11 +4,24 @@
     src: local('DidactGothic'), url(./fonts/DidactGothic-Regular.ttf) format('opentype');
 }
 
+@font-face {
+   font-family: 'BeVietnam-regular';
+   font-weight: 900;
+   src: local('BeVietnam'), url(./fonts/BeVietnam-Regular.ttf) format('opentype');
+}
+
+@font-face {
+   font-family: 'EBGaramond';
+   font-weight: 900;
+   src: local('EBGaramond'), url(./fonts/EBGaramond-SemiBold.ttf) format('opentype');
+}
+
+
 body
 {
    margin: 0px;
    padding: 0px;
-   font-family: 'Roboto', sans-serif;
+   font-family: 'BeVietnam-regular', sans-serif;
 }
 
 p{
