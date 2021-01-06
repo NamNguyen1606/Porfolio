@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
     display: flex;
     width: 100%;
-    height: 82px;
+    height: 70px;
     background-color: #3C3B3A;
 `
 
@@ -28,8 +28,9 @@ const SubNavigateContainer = styled.div`
 `;
 
 const LogoTxt = styled.pre`
-    font-family: 'EB Garamond';
+    font-family: 'Cinzel';
     font-size: 18px;
+    letter-spacing: 3px;
     color: #FAF4E6;
     font-weight: bold;
     padding: 0;
@@ -53,7 +54,7 @@ const Nav = () => {
     return(
         <Container>
             <LogoContainer>
-                <LogoTxt>{`N A M  N G U Y E N .`}</LogoTxt>
+                <LogoTxt>{`NAM NGUYEN.`}</LogoTxt>
             </LogoContainer>
             <SubNavigateContainer>
                 <SubNavigateTittle>About</SubNavigateTittle>

@@ -16,6 +16,11 @@
    src: local('EBGaramond'), url(./fonts/EBGaramond-SemiBold.ttf) format('opentype');
 }
 
+@font-face {
+   font-family: 'Cinzel';
+   font-weight: 900;
+   src: local('Cinzel'), url(./fonts/Cinzel-Regular.ttf) format('opentype');
+}
 
 body
 {
