@@ -1,12 +1,41 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import Logo from '../../asset/logo/LOGO.png';
 
-const Container = styled.div`
+interface IContainer {
+    readonly isShow: boolean;
+}
+
+const Container = styled.div<IContainer>`
     display: flex;
+    top: 0;
     width: 100%;
     height: 70px;
-    background-color: #3C3B3A;
+    background-color: transparent;
+    ${
+        (props) => {
+            if(props.isShow){
+                return css`
+                    background-color: transparent;
+                    position: absolute;
+                `
+            } else {
+                return css`
+                    background-color: #3C3B3A;
+                    position: -webkit-sticky; /* Safari */
+                    position: sticky;
+                `
+            }
+        }
+    }
 `
+
+const LogoImage = styled.img`
+    height: 20px;
+    width: 19px;
+    object-fit: contain;
+`;
+
 
 const LogoContainer = styled.div`
     flex: 2;
@@ -34,7 +63,8 @@ const LogoTxt = styled.pre`
     color: #FAF4E6;
     font-weight: bold;
     padding: 0;
-    margin: 0;   
+    margin: 0;
+    margin-left: 10px;
 `
 
 const SubNavigateTittle = styled.p`
@@ -49,11 +79,16 @@ const SubNavigateTittle = styled.p`
     }
 `
 
-const Nav = () => {
+interface IProps {
+    isShow: boolean;
+}
 
+const Nav: React.FC<IProps> = React.memo((props) => {
+    console.log("rendered");
     return(
-        <Container>
+        <Container isShow={props.isShow}>
             <LogoContainer>
+                <LogoImage src={Logo}/>
                 <LogoTxt>{`NAM NGUYEN.`}</LogoTxt>
             </LogoContainer>
             <SubNavigateContainer>
@@ -64,6 +99,6 @@ const Nav = () => {
             </SubNavigateContainer>
         </Container>
     )
-};
+});
 export default Nav;
 

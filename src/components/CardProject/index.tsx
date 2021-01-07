@@ -76,4 +76,3 @@ const CardProject: React.FC<Props> = (props) => {
 }
 
 export default CardProject;
-// "https://i.pinimg.com/originals/87/9f/ba/879fba21d66993bf0efb278e6767b658.jpg"
