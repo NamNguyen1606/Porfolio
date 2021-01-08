@@ -11,6 +11,12 @@
 }
 
 @font-face {
+   font-family: 'BeVietnam-extraBold';
+   font-weight: 900;
+   src: local('BeVietnam'), url(./fonts/BeVietnam-ExtraBold.ttf) format('opentype');
+}
+
+@font-face {
    font-family: 'EBGaramond';
    font-weight: 900;
    src: local('EBGaramond'), url(./fonts/EBGaramond-SemiBold.ttf) format('opentype');

@@ -1,18 +1,28 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import Logo from '../../asset/logo/LOGO.png';
 
+const opacity = keyframes`
+    from{
+        background-color: transparent;
+    }
+
+    to{
+        background-color: #3C3B3A;
+    }
+`
 interface IContainer {
     readonly isShow: boolean;
 }
 
 const Container = styled.div<IContainer>`
     display: flex;
+    position: absolute;
     top: 0;
     width: 100%;
     height: 70px;
     background-color: transparent;
-    ${
+    /* ${
         (props) => {
             if(props.isShow){
                 return css`
@@ -22,13 +32,14 @@ const Container = styled.div<IContainer>`
             } else {
                 return css`
                     background-color: #3C3B3A;
-                    position: -webkit-sticky; /* Safari */
-                    position: sticky;
+                    position: -webkit-sticky; Safari
                 `
             }
+
+            
         }
-    }
-`
+    } */
+`;
 
 const LogoImage = styled.img`
     height: 20px;
@@ -44,7 +55,6 @@ const LogoContainer = styled.div`
     align-items: center;
     padding-left: 70px;
     background-color: transparent;
-    
 `;
 
 const SubNavigateContainer = styled.div`
@@ -76,6 +86,8 @@ const SubNavigateTittle = styled.p`
 
     &:hover {
         color: #FF9292;
+        border-bottom: 3px solid #FF9292;
+        padding-bottom: 5px;
     }
 `
 
