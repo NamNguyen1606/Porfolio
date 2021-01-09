@@ -104,10 +104,9 @@ const Nav: React.FC<IProps> = React.memo((props) => {
                 <LogoTxt>{`NAM NGUYEN.`}</LogoTxt>
             </LogoContainer>
             <SubNavigateContainer>
-                <SubNavigateTittle>About</SubNavigateTittle>
-                <SubNavigateTittle>Work</SubNavigateTittle>
-                <SubNavigateTittle>Experience</SubNavigateTittle>
-                <SubNavigateTittle>Contact</SubNavigateTittle>
+                <SubNavigateTittle>GitHub</SubNavigateTittle>
+                <SubNavigateTittle>LinkedIn</SubNavigateTittle>
+                <SubNavigateTittle>Email</SubNavigateTittle>
             </SubNavigateContainer>
         </Container>
     )
