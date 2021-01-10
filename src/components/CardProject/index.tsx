@@ -4,6 +4,7 @@ import styled, {css} from 'styled-components';
 
 interface Props {
     title: string;
+    description: string;
     url: string;
 }
 
@@ -18,6 +19,7 @@ const ButtonContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 `;
 
 const Container = styled.div<IContainer>`
@@ -26,13 +28,16 @@ const Container = styled.div<IContainer>`
     align-items: center;
     height: 350px;
     width: 350px;
+    margin: 40px;
     background-color: lightgray;
     background-size: cover, contain;
     background-position: center;
-    filter: grayscale(100%);
+    filter: grayscale(60%);
     background-image: url(${props => props.url});
+    border-radius: 20px;
+    box-shadow: 0 8px 6px -6px black;
     &:hover {
-        filter: grayscale(10%);
+        filter: grayscale(5%);
         background-color: lightgray;
         transform: scale(1.01);
         transition: all .2s ease-in-out;
@@ -48,7 +53,7 @@ const TextButton = styled.text`
     font-weight: bold;
     padding: 5px 20px;
     border: 1px solid white;
-    font-family: DidactGothic;
+    font-family: "DidactGothic";
     cursor: pointer;
     &:hover{
         background-color: white;
@@ -61,7 +66,15 @@ const Title = styled.text`
     color: white;
     font-weight: bold;
     padding: 5px;
-    font-family: DidactGothic;
+    font-family: "DidactGothic";
+`;
+
+const Type = styled.text`
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    font-family: "DidactGothic";
 `;
 
 const CardProject: React.FC<Props> = (props) => {
@@ -69,7 +82,8 @@ const CardProject: React.FC<Props> = (props) => {
         <Container url={props.url}>
             <ButtonContainer>
                 <Title>{props.title}</Title>
-                <TextButton>MORE</TextButton>
+                <Type>{props.description}</Type>
+                <TextButton>VIEW</TextButton>
             </ButtonContainer>
         </Container>
     )

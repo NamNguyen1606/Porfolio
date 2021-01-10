@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import AboutMeScreen from './aboutMeScreen';
+import ProjectScreen from './projectScreen';
 import TechnicalScreen from './technicalScreen';
 
 const Container = styled.div`
@@ -14,6 +15,7 @@ const MiddleScreen = () => {
         <Container>
             <AboutMeScreen/>
             <TechnicalScreen/>
+            <ProjectScreen/>
         </Container>
     );
 

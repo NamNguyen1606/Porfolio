@@ -1,28 +1,19 @@
 import React from 'react';
 import styled, { css, keyframes } from 'styled-components';
 import Logo from '../../asset/logo/LOGO.png';
-
-const opacity = keyframes`
-    from{
-        background-color: transparent;
-    }
-
-    to{
-        background-color: #3C3B3A;
-    }
-`
 interface IContainer {
     readonly isShow: boolean;
 }
 
 const Container = styled.div<IContainer>`
     display: flex;
-    position: absolute;
+    position: sticky;
+    z-index: 4;
     top: 0;
     width: 100%;
-    height: 70px;
+    height: 60px;
     background-color: transparent;
-    /* ${
+    ${
         (props) => {
             if(props.isShow){
                 return css`
@@ -31,14 +22,14 @@ const Container = styled.div<IContainer>`
                 `
             } else {
                 return css`
-                    background-color: #3C3B3A;
-                    position: -webkit-sticky; Safari
+                    background-color: rgba(60, 59, 58, 0.85);
+                    position: -webkit-sticky; Safari,
                 `
             }
 
             
         }
-    } */
+    }
 `;
 
 const LogoImage = styled.img`

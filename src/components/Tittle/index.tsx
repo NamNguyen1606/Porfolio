@@ -13,7 +13,7 @@ const Container = styled.div`
 `
 
 const TittleTxt = styled.h1`
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     font-family: "BeVietnam-extraBold";
     font-size: 50px;
     color: #FAF4E6;
