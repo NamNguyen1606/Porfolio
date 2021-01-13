@@ -34,7 +34,10 @@ const Avatar = styled.img`
     transition: all .2s ease-in-out;
     margin: 0px 40px;
     margin-top: 40px;
-    box-shadow: 5px 10px 8px #131313;
+    box-shadow: 10px 10px 5px #131313;
+    &:hover{
+        box-shadow: 15px 15px 5px #131313;
+    }
 `
 
 const InfoContainer = styled.div`
@@ -69,9 +72,8 @@ const AboutMeScreen = () => {
                 <Avatar src={AvatarUser}/>
                 <InfoContainer>
                     <InfoText>
-                        Hello <NameText>I’m Nam</NameText>, a software engineer in Ho Chi Minh city. I enjoy creating mobile applications, website or anything in between.
-                        I enjoy creating mobile applications, website or anything in between.  
-                        I enjoy creating mobile  mobile applications applications, website or anything in between.
+                        Hello, <NameText>I’m Nam</NameText>, a software engineer in Ho Chi Minh city with 1 year of experience in React Native technologies. Learning new languages and technologies is what I am passionate about.<br/>
+                        I enjoy creating mobile applications, website or anything in between. I like helping other and work well with group.
                     </InfoText>
                 </InfoContainer>
             </SubContainer>

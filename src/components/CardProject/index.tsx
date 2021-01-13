@@ -20,6 +20,7 @@ const ButtonContainer = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    visibility: visible;
 `;
 
 const Container = styled.div<IContainer>`
@@ -32,15 +33,16 @@ const Container = styled.div<IContainer>`
     background-color: lightgray;
     background-size: cover, contain;
     background-position: center;
-    filter: grayscale(60%);
+    filter: grayscale(10%);
     background-image: url(${props => props.url});
     border-radius: 20px;
     box-shadow: 0 8px 6px -6px black;
+    transition: all .2s ease-in-out;
+    
     &:hover {
-        filter: grayscale(5%);
+        filter: grayscale(100%);
         background-color: lightgray;
         transform: scale(1.01);
-        transition: all .2s ease-in-out;
     };
     ${ButtonContainer}:hover {
         background-color: rgba(0,0,0, 0.3);

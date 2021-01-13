@@ -7,12 +7,13 @@ interface IContainer {
 
 const Container = styled.div<IContainer>`
     display: flex;
-    position: sticky;
-    z-index: 4;
+    position: fixed;
+    z-index: 6;
     top: 0;
     width: 100%;
     height: 60px;
     background-color: transparent;
+    transition: all .3s ease-in;
     ${
         (props) => {
             if(props.isShow){
@@ -25,9 +26,7 @@ const Container = styled.div<IContainer>`
                     background-color: rgba(60, 59, 58, 0.85);
                     position: -webkit-sticky; Safari,
                 `
-            }
-
-            
+            }    
         }
     }
 `;
@@ -68,12 +67,13 @@ const LogoTxt = styled.pre`
     margin-left: 10px;
 `
 
-const SubNavigateTittle = styled.p`
+const SubNavigateTittle = styled.a`
     font-family: 'BeVietnam-regular';
     font-size: 14px;
     color: #FAF4E6;
     margin-left: 50px;
     cursor: pointer;
+    text-decoration: none;
 
     &:hover {
         color: #FF9292;
@@ -87,7 +87,6 @@ interface IProps {
 }
 
 const Nav: React.FC<IProps> = React.memo((props) => {
-    console.log("rendered");
     return(
         <Container isShow={props.isShow}>
             <LogoContainer>
@@ -95,9 +94,9 @@ const Nav: React.FC<IProps> = React.memo((props) => {
                 <LogoTxt>{`NAM NGUYEN.`}</LogoTxt>
             </LogoContainer>
             <SubNavigateContainer>
-                <SubNavigateTittle>GitHub</SubNavigateTittle>
-                <SubNavigateTittle>LinkedIn</SubNavigateTittle>
-                <SubNavigateTittle>Email</SubNavigateTittle>
+                <SubNavigateTittle href="https://github.com/NamNguyen1606" target="_blank">GitHub</SubNavigateTittle>
+                <SubNavigateTittle href="https://www.linkedin.com/in/nam-nguyen-1222561aa/" target="_blank">LinkedIn</SubNavigateTittle>
+                <SubNavigateTittle href="mailto:ntpnam98@gmail.com" target="_blank">Email</SubNavigateTittle>
             </SubNavigateContainer>
         </Container>
     )

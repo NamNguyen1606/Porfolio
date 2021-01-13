@@ -29,11 +29,12 @@ const ProjectScreen = () => {
         <Container>
             <Tittle tittle="PROJECT"/>
             <ProjectContainer>
-                <CardProject title="Chat App" description="some thing" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
-                <CardProject title="Chat App" description="some thing" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
-                <CardProject title="Side Project" description="some thing" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
-                <CardProject title="Side Project" description="some thing" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
-                <CardProject title="Chat App" description="some thing" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
+                <CardProject title="Chat Mobile" description="React Native/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
+                <CardProject title="Chat Website" description="ReactJs/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
+                <CardProject title="Chat Server" description="NodeJs/Express/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
+                <CardProject title="Apollo" description="React Native/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
+                <CardProject title="Instacop" description="Flutter/Dart/Firebase" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
+                <CardProject title="Flash Chat" description="Flutter/Dart/Firebase" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
             </ProjectContainer>
         </Container>
     )

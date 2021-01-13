@@ -49,6 +49,10 @@ const TechContainer = styled.div`
     background-color: rgba(196,196,196,0.2);
     box-shadow: 0 8px 6px -6px black;
     border-radius: 20px;
+    transition: all 0.3s ease-in;
+    &:hover{
+        box-shadow: 10px 10px 3px #00000090;
+    }
 `
 
 const TechListContainer = styled.div`
