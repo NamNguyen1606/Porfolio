@@ -6,6 +6,7 @@ interface Props {
     title: string;
     description: string;
     url: string;
+    onClick?: () => void;
 }
 
 interface IContainer{
@@ -33,14 +34,14 @@ const Container = styled.div<IContainer>`
     background-color: lightgray;
     background-size: cover, contain;
     background-position: center;
-    filter: grayscale(10%);
+    filter: grayscale(60%);
     background-image: url(${props => props.url});
     border-radius: 20px;
     box-shadow: 0 8px 6px -6px black;
     transition: all .2s ease-in-out;
     
     &:hover {
-        filter: grayscale(100%);
+        filter: grayscale(10%);
         background-color: lightgray;
         transform: scale(1.01);
     };
@@ -81,11 +82,11 @@ const Type = styled.text`
 
 const CardProject: React.FC<Props> = (props) => {
     return (
-        <Container url={props.url}>
+        <Container url={props.url} >
             <ButtonContainer>
                 <Title>{props.title}</Title>
                 <Type>{props.description}</Type>
-                <TextButton>VIEW</TextButton>
+                <TextButton onClick={props.onClick} >VIEW</TextButton>
             </ButtonContainer>
         </Container>
     )

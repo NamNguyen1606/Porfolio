@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import CardProject from '../components/CardProject';
+import ModalScreen from '../components/Modal';
 import Tittle from '../components/Tittle';
+import Modal from 'react-modal';
 
 const Container = styled.div`
     display: flex;
@@ -22,15 +24,36 @@ const ProjectContainer = styled.div`
     width: 100%;
 `
 
+const modalStyles = {
+    content : {
+        top                   : '50%',
+        left                  : '50%',
+        right                 : 'auto',
+        bottom                : 'auto',
+        marginRight           : '-50%',
+        transform             : 'translate(-50%, -50%)',
+        background            : "#ffffff00",
+        border: 0,
+        
+      }
+  };
 
 const ProjectScreen = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const toggleModal = () => setIsModalOpen(!isModalOpen);
 
     return (
         <Container>
+             <Modal
+                isOpen={isModalOpen}
+                style={modalStyles}
+                onRequestClose={toggleModal}>   
+                <ModalScreen/>
+            </Modal>
             <Tittle tittle="PROJECT"/>
             <ProjectContainer>
-                <CardProject title="Chat Mobile" description="React Native/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
-                <CardProject title="Chat Website" description="ReactJs/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
+                <CardProject onClick={toggleModal} title="Chat Mobile" description="React Native/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
+                <CardProject onClick={toggleModal} title="Chat Website" description="ReactJs/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
                 <CardProject title="Chat Server" description="NodeJs/Express/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
                 <CardProject title="Apollo" description="React Native/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
                 <CardProject title="Instacop" description="Flutter/Dart/Firebase" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
