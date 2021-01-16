@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import MiddleScreen from './middleScreen';
-import TopScreen from './topScreen';
+import MiddleScreen from '../MiddleScreen';
+import TopScreen from '../TopScreen/topScreen';
 
 const MainScreen = () => {
 

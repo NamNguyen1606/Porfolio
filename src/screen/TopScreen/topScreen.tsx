@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
-import Nav from '../components/Nav';
+import Nav from '../../components/Nav';
 import BackgroundImage from '../asset/background.jpg';
 
 interface IHomeContainer {

@@ -73,7 +73,7 @@ const settings = {
     mobileFirst: true,
   };
 
-const ModalScreen = () => {
+const ProjectModal = () => {
     return (
         <Container>
             <Tittle>Instacop</Tittle>
@@ -94,4 +94,4 @@ const ModalScreen = () => {
         </Container>
     )
 }
-export default ModalScreen;
+export default ProjectModal;

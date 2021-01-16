@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Tittle from '../components/Tittle';
-import * as Images from '../utils/image'
+import Tittle from '../../components/Tittle';
+import * as Images from '../../utils/image'
 
 const Container = styled.div`
     display: flex;

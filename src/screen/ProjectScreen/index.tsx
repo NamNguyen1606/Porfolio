@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import CardProject from '../components/CardProject';
-import ModalScreen from '../components/Modal';
-import Tittle from '../components/Tittle';
+import CardProject from '../../components/CardProject';
+import ProjectModal from '../../components/Modal';
+import Tittle from '../../components/Tittle';
 import Modal from 'react-modal';
 
 const Container = styled.div`
@@ -48,7 +48,7 @@ const ProjectScreen = () => {
                 isOpen={isModalOpen}
                 style={modalStyles}
                 onRequestClose={toggleModal}>   
-                <ModalScreen/>
+                <ProjectModal/>
             </Modal>
             <Tittle tittle="PROJECT"/>
             <ProjectContainer>

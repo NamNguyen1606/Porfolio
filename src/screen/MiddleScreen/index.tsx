@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import AboutMeScreen from './aboutMeScreen';
-import ProjectScreen from './projectScreen';
-import TechnicalScreen from './technicalScreen';
+import AboutMeScreen from '../AboutMeSreen';
+import ProjectScreen from '../ProjectScreen';
+import TechnicalScreen from '../TechnicalScreen';
 
 const Container = styled.div`
     height: 100vh;
