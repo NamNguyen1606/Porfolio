@@ -1,0 +1,31 @@
+
+.circleContainer {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: #3C3B3A;
+    top: 25%;
+    left: 50%;
+    transition: all .2s ease-in;
+}
+
+.circleContainer:hover{
+    top: 22%;
+}
+
+.arrowIcon {
+    height: 80px;
+    width: 80px;
+    color: lightgray;
+    position: absolute;
+    top: 0;
+    left: 18px;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+.arrowIcon:hover {
+    color: white;
+    top: -6px;
+}

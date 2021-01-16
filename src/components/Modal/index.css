@@ -1,0 +1,15 @@
+.svgClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 35px;
+    width: 35px;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(107%) contrast(101%) opacity(0.2);
+}
+
+.svgClose:hover {
+    filter: invert(92%) sepia(46%) saturate(2%) hue-rotate(182deg) brightness(102%) contrast(101%);
+}

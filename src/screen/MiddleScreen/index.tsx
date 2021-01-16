@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import AboutMeScreen from '../AboutMeSreen';
+import BottomScreen from '../BottomScreen';
 import ProjectScreen from '../ProjectScreen';
 import TechnicalScreen from '../TechnicalScreen';
 
@@ -16,6 +17,7 @@ const MiddleScreen = () => {
             <AboutMeScreen/>
             <TechnicalScreen/>
             <ProjectScreen/>
+            <BottomScreen/>
         </Container>
     );
 

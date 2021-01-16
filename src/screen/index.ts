@@ -1,4 +1,5 @@
 import AboutMeScreen from './AboutMeSreen/index';
+import BottomScreen from './BottomScreen';
 import MainScreen from './MainScreen/index';
 import MiddleScreen from './MiddleScreen/index';
 import ProjectScreen from './ProjectScreen/index';
@@ -11,5 +12,6 @@ export {
     MiddleScreen,
     ProjectScreen,
     TechnicalScreen,
-    TopScreen
+    TopScreen,
+    BottomScreen
 }

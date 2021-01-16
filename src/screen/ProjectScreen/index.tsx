@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import CardProject from '../../components/CardProject';
 import ProjectModal from '../../components/Modal';
 import Tittle from '../../components/Tittle';
@@ -13,7 +13,6 @@ const Container = styled.div`
     margin: 0px;
     padding: 0px;
     background-color: #222222;
-    margin-bottom: 15px;
 `
 
 const ProjectContainer = styled.div`
@@ -30,17 +29,24 @@ const modalStyles = {
         left                  : '50%',
         right                 : 'auto',
         bottom                : '-30%',
-        // marginRight           : '-50%',
         transform             : 'translate(-50%, -50%)',
         background            : "#3C3B3A",
         border: 0,
-        
-      }
+      },
+    overlay: {
+        background: "#ffffff50"
+    }
   };
 
 const ProjectScreen = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [projectId, setProjectId] = useState<number>(0);
     const toggleModal = () => setIsModalOpen(!isModalOpen);
+
+    const handleCardClick = (id: number) => {
+        setProjectId(id);
+        toggleModal();
+    }
 
     return (
         <Container>
@@ -48,13 +54,12 @@ const ProjectScreen = () => {
                 isOpen={isModalOpen}
                 style={modalStyles}
                 onRequestClose={toggleModal}>   
-                <ProjectModal/>
+                <ProjectModal projectId={projectId}  onClose={toggleModal}/>
             </Modal>
             <Tittle tittle="PROJECT"/>
             <ProjectContainer>
-                <CardProject onClick={toggleModal} title="Chat Mobile" description="React Native/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
-                <CardProject onClick={toggleModal} title="Chat Website" description="ReactJs/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
-                <CardProject title="Chat Server" description="NodeJs/Express/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
+                <CardProject onClick={() => handleCardClick(0)} title="Chat Mobile" description="React Native/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
+                <CardProject title="Chat Website" description="ReactJs/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
                 <CardProject title="Apollo" description="React Native/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
                 <CardProject title="Instacop" description="Flutter/Dart/Firebase" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
                 <CardProject title="Flash Chat" description="Flutter/Dart/Firebase" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
