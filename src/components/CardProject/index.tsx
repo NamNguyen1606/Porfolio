@@ -21,7 +21,6 @@ const ButtonContainer = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    visibility: visible;
 `;
 
 const Container = styled.div<IContainer>`
@@ -46,7 +45,7 @@ const Container = styled.div<IContainer>`
         transform: scale(1.01);
     };
     ${ButtonContainer}:hover {
-        background-color: rgba(0,0,0, 0.3);
+        background-color: rgba(0,0,0, 0.6);
     }
 `;
 

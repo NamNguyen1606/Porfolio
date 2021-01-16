@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Tittle from '../../components/Tittle';
-import AvatarUser from '../asset/avatar.png';
+import AvatarUser from '../../asset/avatar.png';
 
 const Container = styled.div`
     display: flex;
