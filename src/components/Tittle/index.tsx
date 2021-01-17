@@ -27,7 +27,7 @@ const TittleTxt = styled.h1`
     }
 
     @media ${`(max-width: 500px)`}{
-        font-size: 30px;
+        font-size: 35px;
     }
 `
 const Tittle: React.FC<IProps> = (props) => {

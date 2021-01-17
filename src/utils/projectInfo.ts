@@ -34,8 +34,8 @@ const Apollo: IProject = {
     images: [
         Image.ApolloBanner
     ],
-    description: "Product ordering system for ebook shop",
-    technology: "React Native - TypeScript",
+    description: "Product ordering system for ebook shop.",
+    technology: "React Native - TypeScript.",
     isHaveSource: true,
     youTubeVideoId: "zS1GWKC9dfw",
     demoUrl: "https://youtu.be/zS1GWKC9dfw",
@@ -43,12 +43,12 @@ const Apollo: IProject = {
 }
 
 const FlashChat: IProject = {
-    name: "FlashChat",
+    name: "Flash",
     images: [
         Image.FlashBanner
     ],
-    description: "An app for group chat",
-    technology: "Flutter - Dart, Firebase,",
+    description: "An app for group chat.",
+    technology: "Flutter - Dart, Firebase.",
     isHaveSource: true,
     youTubeVideoId: "EAY41D2-XNk",
     demoUrl: "https://www.youtube.com/watch?v=EAY41D2-XNk",
@@ -73,7 +73,7 @@ const ChatServiceWebsite: IProject = {
     images: [
         Image.WebChatBanner
     ],
-    description: "An app help customer can create group chat room and personal chat room",
+    description: "An app help customer can create group chat room and personal chat room.",
     technology: "ReactJS, NodeJs, Express, Socket.io, MongoDB, CosmosDB.",
     isHaveSource: true,
     youTubeVideoId: "qdygAJv3_yg",
