@@ -1,3 +1,4 @@
+import * as Image from '../utils/image'
 interface IProject {
     name: string;
     images: string[];
@@ -17,7 +18,9 @@ const DATA = [
 
 const Instacop: IProject = {
     name: "Instacop",
-    images: DATA,
+    images: [
+        Image.InstacopBanner
+    ],
     description: "Product ordering system for clothes shop.",
     technology: "Flutter - Dart, Firebase, Stripe.",
     isHaveSource: true,
@@ -28,7 +31,9 @@ const Instacop: IProject = {
 
 const Apollo: IProject = {
     name: "Apollo",
-    images: DATA,
+    images: [
+        Image.ApolloBanner
+    ],
     description: "Product ordering system for ebook shop",
     technology: "React Native - TypeScript",
     isHaveSource: true,
@@ -39,7 +44,9 @@ const Apollo: IProject = {
 
 const FlashChat: IProject = {
     name: "FlashChat",
-    images: DATA,
+    images: [
+        Image.FlashBanner
+    ],
     description: "An app for group chat",
     technology: "Flutter - Dart, Firebase,",
     isHaveSource: true,
@@ -49,33 +56,37 @@ const FlashChat: IProject = {
 }
 
 const ChatServiceMobile: IProject = {
-    name: "FlashChat",
-    images: DATA,
+    name: "MobiChat",
+    images: [
+
+    ],
     description: "An app help customer can create group chat room and personal chat room",
     technology: "React Native, ReactJS, NodeJs, Express, Socket.io, MongoDB, CosmosDB.",
     isHaveSource: true,
-    youTubeVideoId: "",
-    demoUrl: "",
+    youTubeVideoId: "qdygAJv3_yg",
+    demoUrl: "https://youtu.be/qdygAJv3_yg",
     githubUrl: "",
 }
 
 const ChatServiceWebsite: IProject = {
-    name: "FlashChat",
-    images: DATA,
+    name: "WebChat",
+    images: [
+        Image.WebChatBanner
+    ],
     description: "An app help customer can create group chat room and personal chat room",
     technology: "ReactJS, NodeJs, Express, Socket.io, MongoDB, CosmosDB.",
     isHaveSource: true,
-    youTubeVideoId: "",
-    demoUrl: "",
+    youTubeVideoId: "qdygAJv3_yg",
+    demoUrl: "https://www.youtube.com/watch?v=qdygAJv3_yg&feature=emb_title&ab_channel=NamNguyen",
     githubUrl: "",
 }
 
 const ProjectData: IProject[] = [
     Instacop,
     Apollo,
+    ChatServiceWebsite,
     FlashChat,
     ChatServiceMobile,
-    ChatServiceWebsite
 ];
 
-export default ProjectData;
+export default ProjectData; 

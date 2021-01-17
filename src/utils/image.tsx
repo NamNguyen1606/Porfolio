@@ -23,6 +23,12 @@ import Apollo from '../asset/project/apollo.png'
 import FlashChat from '../asset/project/flashChat.png'
 import WebChat from '../asset/project/webChat.png'
 
+// BANNER
+import InstacopBanner from '../asset/banner/instacop-banner.png'
+import ApolloBanner from '../asset/banner/apollo-banner-1.png'
+import FlashBanner from '../asset/banner/flash-banner.png'
+import WebChatBanner from '../asset/banner/webChat-banner.png'
+
 export {
     AndroidStudio,
     Express,
@@ -45,4 +51,8 @@ export {
     Apollo,
     WebChat,
     FlashChat,
+    InstacopBanner,
+    ApolloBanner,
+    FlashBanner,
+    WebChatBanner
 }

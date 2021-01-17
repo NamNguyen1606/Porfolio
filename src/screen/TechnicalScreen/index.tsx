@@ -53,6 +53,10 @@ const TechContainer = styled.div`
     &:hover{
         box-shadow: 10px 10px 3px #00000090;
     }
+
+    @media ${`(max-width: 500px)`}{
+        width: 300px;
+    }
 `
 
 const TechListContainer = styled.div`

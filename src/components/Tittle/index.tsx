@@ -25,6 +25,10 @@ const TittleTxt = styled.h1`
         opacity: 0.9;
         transition: all .2s ease-in-out;
     }
+
+    @media ${`(max-width: 500px)`}{
+        font-size: 30px;
+    }
 `
 const Tittle: React.FC<IProps> = (props) => {
     return (

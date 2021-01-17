@@ -96,7 +96,7 @@ const Link = styled.a`
     }
 `
 
-const items = DATA.map((item, index) => <ImageProject key={index} src={item} />)
+
 
 const settings = {
     dots: true,
@@ -115,6 +115,7 @@ interface IProjectModal {
 
 const ProjectModal: React.FC<IProjectModal> = (props) => {
 
+    const items = DATA.map((item, index) => <ImageProject key={index} src={item} />)
     return (
         <Container>
             <svg onClick={props.onClose} className="svgClose" xmlns="http://www.w3.org/2000/svg" viewBox= "0 0 25 25" stroke="currentColor">
@@ -127,7 +128,7 @@ const ProjectModal: React.FC<IProjectModal> = (props) => {
                 <SliderContainer>
                     <Slider {...settings}>
                         <IFrameProject src={`https://www.youtube.com/embed/${ProjectData[props.projectId].youTubeVideoId}`} frameBorder={0} allowFullScreen></IFrameProject>
-                        {items}
+                        {ProjectData[props.projectId].images.map((item, index) => <ImageProject key={index} src={item} />)}
                     </Slider>
                 </SliderContainer>
                 <InfoContainer>
@@ -137,9 +138,9 @@ const ProjectModal: React.FC<IProjectModal> = (props) => {
                     <TextInfo>
                     • Technologies: {ProjectData[props.projectId].technology}
                     </TextInfo>
-                    { !ProjectData[props.projectId].isHaveSource || <TextInfo>
-                    • Source: <Link href={ProjectData[props.projectId].githubUrl} >Github</Link> - <Link>Demo</Link>
-                    </TextInfo>}
+                    <TextInfo>
+                    • Source: {!ProjectData[props.projectId].githubUrl || <Link target="_blank" href={ProjectData[props.projectId].githubUrl} >Github</Link>} - {!ProjectData[props.projectId].demoUrl || <Link target="_blank" href={ProjectData[props.projectId].demoUrl}>Demo</Link>}
+                    </TextInfo>
                 </InfoContainer>
             </ProjectContainer>
         </Container>

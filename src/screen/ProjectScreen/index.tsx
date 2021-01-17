@@ -59,11 +59,11 @@ const ProjectScreen = () => {
             </Modal>
             <Tittle tittle="PROJECT"/>
             <ProjectContainer>
-                <CardProject onClick={() => handleCardClick(0)} title="Chat Mobile" description="React Native/TypeScript" url={ImageData.WebChat}/>
-                <CardProject title="Chat Website" description="ReactJs/TypeScript" url={ImageData.WebChat}/>
-                <CardProject title="Apollo" description="React Native/TypeScript" url={ImageData.Apollo}/>
-                <CardProject title="Instacop" description="Flutter/Dart/Firebase" url={ImageData.Instacop}/>
-                <CardProject title="Flash Chat" description="Flutter/Dart/Firebase" url={ImageData.FlashChat}/>
+                <CardProject onClick={() => handleCardClick(0)} title="Instacop" description="Flutter/Dart/Firebase" url={ImageData.Instacop}/>
+                <CardProject onClick={() => handleCardClick(1)} title="Apollo" description="React Native/TypeScript" url={ImageData.Apollo}/>
+                <CardProject onClick={() => handleCardClick(2)} title="Chat Website" description="ReactJs/TypeScript" url={ImageData.WebChat}/>
+                {/* <CardProject onClick={() => handleCardClick(0)} title="Chat Mobile" description="React Native/TypeScript" url={ImageData.WebChat}/> */}
+                <CardProject onClick={() => handleCardClick(3)} title="Flash Chat" description="Flutter/Dart/Firebase" url={ImageData.FlashChat}/>
             </ProjectContainer>
         </Container>
     )
