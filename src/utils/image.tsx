@@ -1,3 +1,4 @@
+//TECHNICAL
 import AndroidStudio from '../asset/technical/android_studio.png'
 import Express from '../asset/technical/express.png'
 import JavaScript from '../asset/technical/js.png'
@@ -16,6 +17,12 @@ import VSCode from '../asset/technical/vscode.png'
 import XCode from '../asset/technical/xcode.png'
 import Figma from '../asset/technical/figma.png'
 
+//PROJECT
+import Instacop from '../asset/project/instacop.png'
+import Apollo from '../asset/project/apollo.png'
+import FlashChat from '../asset/project/flashChat.png'
+import WebChat from '../asset/project/webChat.png'
+
 export {
     AndroidStudio,
     Express,
@@ -33,5 +40,9 @@ export {
     TypeScript,
     VSCode,
     XCode,
-    Figma
+    Figma,
+    Instacop,
+    Apollo,
+    WebChat,
+    FlashChat,
 }

@@ -21,6 +21,8 @@ const ButtonContainer = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    opacity: 0;
+    transition: all .3s ease-in;
 `;
 
 const Container = styled.div<IContainer>`
@@ -33,19 +35,20 @@ const Container = styled.div<IContainer>`
     background-color: lightgray;
     background-size: cover, contain;
     background-position: center;
-    filter: grayscale(60%);
+    filter: grayscale(20%);
     background-image: url(${props => props.url});
     border-radius: 20px;
     box-shadow: 0 8px 6px -6px black;
     transition: all .2s ease-in-out;
     
     &:hover {
-        filter: grayscale(10%);
+        filter: grayscale(0%);
         background-color: lightgray;
         transform: scale(1.01);
     };
     ${ButtonContainer}:hover {
-        background-color: rgba(0,0,0, 0.6);
+        opacity: 1;
+        background-color: rgba(0,0,0, 0.7);
     }
 `;
 
@@ -54,6 +57,7 @@ const TextButton = styled.text`
     color: white;
     font-weight: bold;
     padding: 5px 20px;
+    margin-top: 5px;
     border: 1px solid white;
     font-family: "DidactGothic";
     cursor: pointer;

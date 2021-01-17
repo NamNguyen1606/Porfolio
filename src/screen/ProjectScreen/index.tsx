@@ -4,6 +4,7 @@ import CardProject from '../../components/CardProject';
 import ProjectModal from '../../components/Modal';
 import Tittle from '../../components/Tittle';
 import Modal from 'react-modal';
+import * as ImageData  from '../../utils/image';
 
 const Container = styled.div`
     display: flex;
@@ -34,7 +35,7 @@ const modalStyles = {
         border: 0,
       },
     overlay: {
-        background: "#ffffff50"
+        background: "#000000B3"
     }
   };
 
@@ -58,11 +59,11 @@ const ProjectScreen = () => {
             </Modal>
             <Tittle tittle="PROJECT"/>
             <ProjectContainer>
-                <CardProject onClick={() => handleCardClick(0)} title="Chat Mobile" description="React Native/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
-                <CardProject title="Chat Website" description="ReactJs/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
-                <CardProject title="Apollo" description="React Native/TypeScript" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
-                <CardProject title="Instacop" description="Flutter/Dart/Firebase" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
-                <CardProject title="Flash Chat" description="Flutter/Dart/Firebase" url="https://i.ytimg.com/vi/9MYunpPLVu0/maxresdefault.jpg"/>
+                <CardProject onClick={() => handleCardClick(0)} title="Chat Mobile" description="React Native/TypeScript" url={ImageData.WebChat}/>
+                <CardProject title="Chat Website" description="ReactJs/TypeScript" url={ImageData.WebChat}/>
+                <CardProject title="Apollo" description="React Native/TypeScript" url={ImageData.Apollo}/>
+                <CardProject title="Instacop" description="Flutter/Dart/Firebase" url={ImageData.Instacop}/>
+                <CardProject title="Flash Chat" description="Flutter/Dart/Firebase" url={ImageData.FlashChat}/>
             </ProjectContainer>
         </Container>
     )

@@ -22,8 +22,8 @@ const Instacop: IProject = {
     technology: "Flutter - Dart, Firebase, Stripe.",
     isHaveSource: true,
     youTubeVideoId: "H8aGcukJyn4",
-    demoUrl: "",
-    githubUrl: "",
+    demoUrl: "https://www.youtube.com/watch?v=H8aGcukJyn4",
+    githubUrl: "https://github.com/NamNguyen1606/Instacop",
 }
 
 const Apollo: IProject = {
@@ -32,9 +32,9 @@ const Apollo: IProject = {
     description: "Product ordering system for ebook shop",
     technology: "React Native - TypeScript",
     isHaveSource: true,
-    youTubeVideoId: "",
-    demoUrl: "",
-    githubUrl: "",
+    youTubeVideoId: "zS1GWKC9dfw",
+    demoUrl: "https://youtu.be/zS1GWKC9dfw",
+    githubUrl: "https://github.com/NamNguyen1606/Apollo-Ebook-App",
 }
 
 const FlashChat: IProject = {
@@ -43,9 +43,9 @@ const FlashChat: IProject = {
     description: "An app for group chat",
     technology: "Flutter - Dart, Firebase,",
     isHaveSource: true,
-    youTubeVideoId: "",
-    demoUrl: "",
-    githubUrl: "",
+    youTubeVideoId: "EAY41D2-XNk",
+    demoUrl: "https://www.youtube.com/watch?v=EAY41D2-XNk",
+    githubUrl: "https://github.com/NamNguyen1606/Flutter-Chat", 
 }
 
 const ChatServiceMobile: IProject = {
