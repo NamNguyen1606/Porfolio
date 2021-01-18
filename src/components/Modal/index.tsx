@@ -127,8 +127,8 @@ const ProjectModal: React.FC<IProjectModal> = (props) => {
             <ProjectContainer>
                 <SliderContainer>
                     <Slider {...settings}>
-                        <IFrameProject src={`https://www.youtube.com/embed/${ProjectData[props.projectId].youTubeVideoId}`} frameBorder={0} allowFullScreen></IFrameProject>
                         {ProjectData[props.projectId].images.map((item, index) => <ImageProject key={index} src={item} />)}
+                        <IFrameProject src={`https://www.youtube.com/embed/${ProjectData[props.projectId].youTubeVideoId}`} frameBorder={0} allowFullScreen></IFrameProject>
                     </Slider>
                 </SliderContainer>
                 <InfoContainer>
