@@ -31,6 +31,15 @@ const Container = styled.div`
     overflow-y: scroll;
     align-items: flex-start;
     animation: .5s ${fadeIn} ease-in;
+    transition: all .3s ease-in;
+
+    @media ${`(max-width: 1000px)`}{
+        width: 500px;
+    }
+
+    @media ${`(max-width: 700px)`}{
+        width: 250px;
+    }
 `
 
 const TittleContainer = styled.div`
@@ -68,22 +77,52 @@ const SliderContainer = styled.div`
     border-radius: 10px;
     padding: 5px 10px;
     margin: 20px 0px; 
+    transition: all .3s ease-in;
+
+    @media ${`(max-width: 1000px)`}{
+        width: 500px;
+    }
+
+    @media ${`(max-width: 700px)`}{
+        width: 250px;
+    }
 `
 
 const InfoContainer = styled.div`
     width: 700px;
-    /* padding: 10px;
-    margin: 10px; */
+    transition: all .3s ease-in;
+
+    @media ${`(max-width: 1000px)`}{
+        width: 500px;
+    }
+
+    @media ${`(max-width: 700px)`}{
+        width: 250px;
+    }
 `
 
 const ImageProject = styled.img`
     width: 700px;
     height: 400px;
     object-fit: contain;
+    @media ${`(max-width: 1000px)`}{
+        width: 500px;
+    }
+
+    @media ${`(max-width: 700px)`}{
+        width: 250px;
+    }
 `
 const IFrameProject = styled.iframe`
     width: 700px;
     height: 400px;
+    @media ${`(max-width: 1000px)`}{
+        width: 500px;
+    }
+
+    @media ${`(max-width: 700px)`}{
+        width: 250px;
+    }
 `
 
 const Link = styled.a`
@@ -114,8 +153,6 @@ interface IProjectModal {
 }
 
 const ProjectModal: React.FC<IProjectModal> = (props) => {
-
-    const items = DATA.map((item, index) => <ImageProject key={index} src={item} />)
     return (
         <Container>
             <svg onClick={props.onClose} className="svgClose" xmlns="http://www.w3.org/2000/svg" viewBox= "0 0 25 25" stroke="currentColor">
