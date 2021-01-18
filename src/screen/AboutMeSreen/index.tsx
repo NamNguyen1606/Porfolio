@@ -7,7 +7,6 @@ const Container = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    min-height: 550px;
     width: 100%;
     background-color: #222222;
 `
@@ -42,13 +41,11 @@ const Avatar = styled.img`
 
 const InfoContainer = styled.div`
     width: 80%;
-    height: 80%;
     margin: 40px 0px;  
 `
 
 const InfoText = styled.pre`
-    white-space: inherit;
-    height: 80%;  
+    white-space: inherit;  
     color: #FAF4E6;
     margin: 0;
     padding: 0;

@@ -50,6 +50,11 @@ const Container = styled.div<IContainer>`
         opacity: 1;
         background-color: rgba(0,0,0, 0.7);
     }
+
+    @media ${`(max-width: 570px)`}{
+        width: 280px;
+        height: 280px;
+    }
 `;
 
 const TextButton = styled.text`

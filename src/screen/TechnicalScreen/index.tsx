@@ -40,6 +40,9 @@ const TechTittle = styled.p`
     font-family: "BeVietnam-extraBold";
     margin-top: 20px;
     margin-left: 30px;
+    @media ${`(max-width: 350px)`}{
+        font-size: 15px;
+    }
 `
 
 const TechContainer = styled.div`
@@ -57,6 +60,9 @@ const TechContainer = styled.div`
     @media ${`(max-width: 500px)`}{
         width: 300px;
     }
+    @media ${`(max-width: 350px)`}{
+        width: 200px;
+    }
 `
 
 const TechListContainer = styled.div`
@@ -73,6 +79,10 @@ const BoxImage = styled.img`
     object-fit: cover;
     /* filter: grayscale(20%); */
     border-radius: 4px;
+    @media ${`(max-width: 350px)`}{
+        height: 50px;
+        width: 50px;   
+    }
 `
 
 const TechnicalScreen = () => {

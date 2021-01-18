@@ -13,7 +13,7 @@ const HomeContainer = styled.div<IHomeContainer>`
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: #222222;
     background-image: url(${(props) => props.url});
     background-size: cover;
@@ -27,7 +27,7 @@ const SkillContainer = styled.div`
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: #222222;
 `;
 
