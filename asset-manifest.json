@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Porfolio/static/css/main.c76914ff.chunk.css",
+    "main.js": "/Porfolio/static/js/main.5ae86ea2.chunk.js",
+    "main.js.map": "/Porfolio/static/js/main.5ae86ea2.chunk.js.map",
+    "runtime-main.js": "/Porfolio/static/js/runtime-main.4ea87a5c.js",
+    "runtime-main.js.map": "/Porfolio/static/js/runtime-main.4ea87a5c.js.map",
+    "static/css/2.4d94f10e.chunk.css": "/Porfolio/static/css/2.4d94f10e.chunk.css",
+    "static/js/2.dae83715.chunk.js": "/Porfolio/static/js/2.dae83715.chunk.js",
+    "static/js/2.dae83715.chunk.js.map": "/Porfolio/static/js/2.dae83715.chunk.js.map",
+    "index.html": "/Porfolio/index.html",
+    "static/css/2.4d94f10e.chunk.css.map": "/Porfolio/static/css/2.4d94f10e.chunk.css.map",
+    "static/css/main.c76914ff.chunk.css.map": "/Porfolio/static/css/main.c76914ff.chunk.css.map",
+    "static/js/2.dae83715.chunk.js.LICENSE.txt": "/Porfolio/static/js/2.dae83715.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Porfolio/static/media/EBGaramond-SemiBold.7a4893c3.ttf",
+    "static/media/apollo-banner-1.0d798bdd.png": "/Porfolio/static/media/apollo-banner-1.0d798bdd.png",
+    "static/media/apollo.5415a703.png": "/Porfolio/static/media/apollo.5415a703.png",
+    "static/media/avatar.91492164.png": "/Porfolio/static/media/avatar.91492164.png",
+    "static/media/background.5f69f7d7.jpg": "/Porfolio/static/media/background.5f69f7d7.jpg",
+    "static/media/flash-banner.2d2924c3.png": "/Porfolio/static/media/flash-banner.2d2924c3.png",
+    "static/media/flashChat.33f002c7.png": "/Porfolio/static/media/flashChat.33f002c7.png",
+    "static/media/instacop-banner.e1790907.png": "/Porfolio/static/media/instacop-banner.e1790907.png",
+    "static/media/instacop.af256aa1.png": "/Porfolio/static/media/instacop.af256aa1.png",
+    "static/media/slick-theme.css": "/Porfolio/static/media/slick.c94f7671.ttf",
+    "static/media/webChat-banner.856a5ebf.png": "/Porfolio/static/media/webChat-banner.856a5ebf.png",
+    "static/media/webChat.593463ba.png": "/Porfolio/static/media/webChat.593463ba.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ea87a5c.js",
+    "static/css/2.4d94f10e.chunk.css",
+    "static/js/2.dae83715.chunk.js",
+    "static/css/main.c76914ff.chunk.css",
+    "static/js/main.5ae86ea2.chunk.js"
+  ]
+}
