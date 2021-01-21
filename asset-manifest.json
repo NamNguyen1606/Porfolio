@@ -1,16 +1,11 @@
 {
   "files": {
-    "main.css": "/Porfolio/static/css/main.c76914ff.chunk.css",
+    "main.css": "/Porfolio/static/css/main.29281b97.chunk.css",
     "main.js": "/Porfolio/static/js/main.94d215c5.chunk.js",
-    "main.js.map": "/Porfolio/static/js/main.94d215c5.chunk.js.map",
     "runtime-main.js": "/Porfolio/static/js/runtime-main.4ea87a5c.js",
-    "runtime-main.js.map": "/Porfolio/static/js/runtime-main.4ea87a5c.js.map",
-    "static/css/2.4d94f10e.chunk.css": "/Porfolio/static/css/2.4d94f10e.chunk.css",
+    "static/css/2.5ef52c84.chunk.css": "/Porfolio/static/css/2.5ef52c84.chunk.css",
     "static/js/2.dae83715.chunk.js": "/Porfolio/static/js/2.dae83715.chunk.js",
-    "static/js/2.dae83715.chunk.js.map": "/Porfolio/static/js/2.dae83715.chunk.js.map",
     "index.html": "/Porfolio/index.html",
-    "static/css/2.4d94f10e.chunk.css.map": "/Porfolio/static/css/2.4d94f10e.chunk.css.map",
-    "static/css/main.c76914ff.chunk.css.map": "/Porfolio/static/css/main.c76914ff.chunk.css.map",
     "static/js/2.dae83715.chunk.js.LICENSE.txt": "/Porfolio/static/js/2.dae83715.chunk.js.LICENSE.txt",
     "static/media/index.css": "/Porfolio/static/media/EBGaramond-SemiBold.7a4893c3.ttf",
     "static/media/apollo-banner-1.0d798bdd.png": "/Porfolio/static/media/apollo-banner-1.0d798bdd.png",
@@ -27,9 +22,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4ea87a5c.js",
-    "static/css/2.4d94f10e.chunk.css",
+    "static/css/2.5ef52c84.chunk.css",
     "static/js/2.dae83715.chunk.js",
-    "static/css/main.c76914ff.chunk.css",
+    "static/css/main.29281b97.chunk.css",
     "static/js/main.94d215c5.chunk.js"
   ]
 }
