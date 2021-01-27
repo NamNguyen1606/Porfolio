@@ -175,7 +175,7 @@ const Nav: React.FC<IProps> = React.memo((props) => {
                 <SubNavigateTittle href="https://github.com/NamNguyen1606" target="_blank">Github</SubNavigateTittle>
                 <SubNavigateTittle href="https://www.linkedin.com/in/nam-nguyen-1222561aa/" target="_blank">LinkedIn</SubNavigateTittle>
                 <SubNavigateTittle href="mailto:ntpnam98@gmail.com" target="_blank">Email</SubNavigateTittle>
-                <SubNavigateTittle href="https://drive.google.com/file/d/10TNZzNobR5Vl0EQOMMSpL1G7-pwdY3jO/view?usp=sharing" target="_blank">Resume</SubNavigateTittle>
+                <SubNavigateTittle href="https://drive.google.com/file/d/1om3voh0xNoRa4MeWYX_DRgvItXzNhnad/view?usp=sharing" target="_blank">Resume</SubNavigateTittle>
         </NavContainer>
         </Container>
         </>
